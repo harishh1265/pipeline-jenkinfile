@@ -12,22 +12,22 @@ pipeline {
 				}
 				stage('TEST1') {
 					steps {
-						sh 'echo "first stage test in Jenkinsfile"'
+						sh 'echo "first stage test in Jenkinsfile"; sleep 5'
 					}	
 				}
 				stage('TEST2') {
 					steps {
-						sh 'echo "Second stage test in Jenkinsfile"'
+						sh 'echo "Second stage test in Jenkinsfile"; sleep 5'
 					}	
 				}
 				stage('DEPLOY') {
 					steps {
-						sh 'echo "Final DEPLOY stage in Jenkinsfile"'	
+						sh 'echo "Final DEPLOY stage in Jenkinsfile"; sleep 5'	
 					}
 				}
 				stage('STATUS') {
 					steps {
-						sh 'echo "Pipeline job completed"'	
+						sh 'echo "Pipeline job completed"; sleep 5'	
 					}
 				}
 			}
