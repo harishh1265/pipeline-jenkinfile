@@ -5,18 +5,18 @@ pipeline {
 					steps {
 						sh '''
 							#!/bin/bash 
-							echo "This is a fist build stage in Jenkinsfile"
+							echo "build stage in Jenkinsfile"
 						'''
 					}
 				}
 				stage('TEST1') {
 					steps {
-						sh 'echo "fist test stage in Jenkinsfile"'
+						sh 'echo "first stage test in Jenkinsfile"'
 					}	
 				}
 				stage('TEST2') {
 					steps {
-						sh 'echo "Second test stage in Jenkinsfile"'
+						sh 'echo "Second stage test in Jenkinsfile"'
 					}	
 				}
 				stage('DEPLOY') {
