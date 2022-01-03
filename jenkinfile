@@ -23,6 +23,7 @@ pipeline {
 					steps {
 						sh 'echo "Final DEPLOY stage in Jenkinsfile"'	
 					}
+				}
 				stage('STATUS') {
 					steps {
 						sh 'echo "Pipeline job completed"'	
