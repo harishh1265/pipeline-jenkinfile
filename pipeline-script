@@ -1,0 +1,11 @@
+#!bin/bash 
+Git pull https://github.com/harishh1265/java-codes.git
+If [ $? –ne 0 ];then 
+ Git clone https://github.com/harishh1265/pipeline-jenkinfile.git 
+fi 
+Cd /central_repo 
+Make targetname | tee build.log 
+If [ $? –eq 0 ];then 
+Echo ― ‖ | mail –s ―build success‖
+Scp hello-world-war-1.0.0.war ec2-user@172.31.44.2:/home/ec2-user/tomcat/apache-tomcat-8.5.73/webapps
+fi
